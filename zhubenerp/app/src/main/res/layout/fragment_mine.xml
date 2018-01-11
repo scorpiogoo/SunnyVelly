@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical"
+    tools:context="com.erp.zhubenerp.ui.fragment.MineFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:background="@color/common_blue_normal"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/common_blue_normal"/>
+
+        <ScrollView
+            android:id="@+id/sv_mine_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/common_blue_normal">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                       android:id="@+id/civ_mine_head"
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginLeft="24dp"
+                       android:layout_marginTop="8dp"
+                       android:scaleType="centerCrop"
+                       app:civ_border_color="@color/gray_3"
+                       app:civ_border_width="2dp"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_mine_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:layout_constraintLeft_toRightOf="@+id/civ_mine_head"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_mine_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/civ_mine_head"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_mine_name"
+                        app:layout_constraintVertical_bias="1.0"/>
+
+                    <TextView
+                        android:id="@+id/tv_mine_department"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_mine_company"
+                        app:layout_constraintLeft_toRightOf="@+id/civ_mine_head"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:id="@+id/itv_mine_setting"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:text="{icon-settings}"
+                        android:textColor="@color/gray_5"
+                        android:textSize="22dp"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:id="@+id/itv_mine_quit"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="{icon-power}"
+                        android:textColor="@color/gray_5"
+                        android:textSize="22dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/itv_mine_setting"
+                        app:layout_constraintVertical_bias="0.352"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine_backlog"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_mine_backlog_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="0"
+                            android:textColor="@color/black_font"
+                            android:textSize="22dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="代办事项"
+                            android:textColor="@color/gray_9"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="2"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine_myproject"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_mine_myproject_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="0"
+                            android:textColor="@color/black_font"
+                            android:textSize="22dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的项目"
+                            android:textColor="@color/gray_9"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="2"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine_myapply"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_mine_myapply_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="0"
+                            android:textColor="@color/black_font"
+                            android:textSize="22dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的申请"
+                            android:textColor="@color/gray_9"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_mine_mycheckin"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/bg_button_conner_blue"
+                        android:gravity="center"
+                        android:text="{icon-note}"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="我的考勤"
+                        android:textColor="@color/gray_11"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center"
+                        android:text="{ion-ios-arrow-right}"
+                        android:textColor="@color/common_gray_light"
+                        android:textSize="24dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

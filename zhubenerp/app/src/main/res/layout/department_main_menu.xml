@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_button_box"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/ll_menu_project"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:background="@drawable/selector_background_whitebutton"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@mipmap/manage_project"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目申请"
+                android:textColor="@color/grey3"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2"/>
+
+        <LinearLayout
+            android:id="@+id/ll_menu_expense"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:background="@drawable/selector_background_whitebutton"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@mipmap/manage_finance"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="费用申请"
+                android:textColor="@color/grey3"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2"/>
+
+        <LinearLayout
+            android:id="@+id/ll_menu_material"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:background="@drawable/selector_background_whitebutton"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@mipmap/manage_material"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物料申请"
+                android:textColor="@color/grey3"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2"/>
+
+        <LinearLayout
+            android:id="@+id/ll_menu_meeting"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:background="@drawable/selector_background_whitebutton"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@mipmap/manage_meeting"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会议申请"
+                android:textColor="@color/grey3"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <view
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/ll_menu_equipmentwander"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:background="@drawable/selector_background_whitebutton"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@mipmap/manange_equipmentwander"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备巡检"
+                android:textColor="@color/grey3"
+                android:textSize="12sp"/>
+        </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="2"/>
+
+            <LinearLayout
+                android:id="@+id/ll_menu_equipmentrepair"
+                android:layout_width="65dp"
+                android:layout_height="75dp"
+                android:background="@drawable/selector_background_whitebutton"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@mipmap/manage_equipmentrepair"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备报修"
+                    android:textColor="@color/grey3"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2"/>
+
+        <LinearLayout
+            android:id="@+id/ll_menu_securiry"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:background="@drawable/selector_background_whitebutton"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@mipmap/manage_securiry"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="安保巡检"
+                android:textColor="@color/grey3"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+
+        <view
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/ll_menu_supplies"
+                android:layout_width="65dp"
+                android:layout_height="75dp"
+                android:background="@drawable/selector_background_whitebutton"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@mipmap/manage_supplyer"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="供应商管理"
+                    android:textColor="@color/grey3"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="2"/>
+
+            <LinearLayout
+                android:id="@+id/ll_menu_customer"
+                android:layout_width="65dp"
+                android:layout_height="75dp"
+                android:background="@drawable/selector_background_whitebutton"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@mipmap/manage_customer"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户管理"
+                    android:textColor="@color/grey3"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="2"/>
+
+            <LinearLayout
+                android:id="@+id/ll_menu_document"
+                android:layout_width="65dp"
+                android:layout_height="75dp"
+                android:background="@drawable/selector_background_whitebutton"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@mipmap/manage_organizition"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文档管理"
+                    android:textColor="@color/grey3"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="2"/>
+
+            <LinearLayout
+                android:id="@+id/ll_menu_hr"
+                android:layout_width="65dp"
+                android:layout_height="75dp"
+                android:background="@drawable/selector_background_whitebutton"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@mipmap/manage_human"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人事管理"
+                    android:textColor="@color/grey3"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <view
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+
+</LinearLayout>
